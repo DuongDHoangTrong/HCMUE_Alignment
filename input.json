@@ -1,0 +1,20 @@
+{
+  "laser": {
+    "intensity": 2,
+    "fwhm": 60,
+    "step": 150
+  },
+  "molecules": {
+    "name": "N2",
+    "B": 1.989,
+    "delta_alpha": 0.93,
+    "J_max": 20,
+    "M_max": 20,
+    "g_even": 2,
+    "g_odd" : 1
+  },
+  "temperature": 20,
+  "t_start": 0,
+  "t_end": 16000,
+  "t_step": 500
+}
