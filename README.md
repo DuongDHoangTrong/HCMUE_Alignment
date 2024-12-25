@@ -23,29 +23,22 @@ The simulation involves:
 
 ## Usage
 1. Modify `input.json` to define custom molecular parameters or laser settings.
-  *`"laser"`: define laser parameters
-    -`"intensity"`: laser intensity ($10^{13}$ W/cm$^2$);
-    -`"fwhm"`: 'full width height max' of laser duration (fs);
-    -`"step"`: number of steps for laser duration
-  },
-
-  "molecules": {
-    "name": "OCS",
-    "B": 0.2029,
-    "delta_alpha": 4.04,
-    "jMax": 60,
-    "mMax": 50,
-    "deg": 91,
-    "g_even": 1,
-    "g_odd": 1
-  },
-
-  "temperature": 100,
-  "t_start": 0,
-  "t_end": 150000,
-  "t_step": 500
-}
-```   
+   - `"laser"`: define laser parameters:
+     - `"intensity"`: laser intensity ($10^{13}$ W/cm²);
+     - `"fwhm"`: 'full-width height max' of laser duration (fs);
+     - `"step"`: number of steps for laser duration.
+   - `"molecules"`: define molecular parameters:
+     - `"name"`: molecular name;
+     - `"B"`: rotational constant (cm⁻¹);
+     - `"delta_alpha"`: polarizability anisotropy - $\Delta\alpha=\alpha_\parallel-\alpha_\perp$ (Å);
+     - `"Jmax"`: number of J states;
+     - `"Mmax"`: number of M states;
+     - `"g_even"`: weight for even J state;
+     - `"g_odd"`: weight for odd J state.
+   - `"temperature"`: temperature of the molecular sample (K).
+   - `"t_start"`: starting time for surveying the degree of alignment (ps);
+   - `"t_end"`: ending time for surveying the degree of alignment (ps);
+   - `"t_step"`: number of steps for the duration of surveying the degree of alignment.
 2. Run `hcmue_alignment.exe`
 
 
